@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- author,version,title,description -->
+	<string-array name="level_000_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Test-Level</item>
+		<item>This is rather a level for testing</item>
+	</string-array>
+	
+	<string-array name="level_001_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>quite easy</item>
+		<item>A very easy level</item>
+	</string-array>
+	
+	<string-array name="level_002_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 2</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_003_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 3</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_004_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 4</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_005_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 5</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_006_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 6</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_007_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 7</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_008_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 8</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_009_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 9</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_010_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 10</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_011_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 11</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_012_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 12</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_013_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 13</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_014_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 14</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_015_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 15</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_016_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 16</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_017_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 17</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_018_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 18</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_019_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 19</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_020_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 20</item>
+		<item></item>
+	</string-array>
+	
+	<string-array name="level_021_info">
+		<item>Nicolai Ommer</item>
+		<item>1.0</item>
+		<item>Level 21</item>
+		<item></item>
+	</string-array>
+</resources>

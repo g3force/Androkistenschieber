@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="level_000_fields">
+		<item>###_####</item>
+		<item>#______#</item>
+		<item>#__$___#</item>
+		<item>#.$__.__</item>
+		<item>_______#</item>
+		<item>#_____@#</item>
+	</string-array>
+	
+	<string-array name="level_001_fields">
+		<item>###</item>
+		<item>##@##__</item>
+		<item>#__._##</item>
+		<item>#__$__#</item>
+		<item>#.$_$.#</item>
+		<item>#######</item>
+	</string-array>
+	
+	<string-array name="level_002_fields">
+           <item>######</item>
+           <item>#.#@##</item>
+           <item>#_$.##</item>
+           <item>#___##</item>
+           <item>#_$_##</item>
+           <item>##__##</item>
+           <item>######</item>
+     </string-array>
+     
+     <string-array name="level_003_fields">
+           <item>#######</item>
+           <item>#.@_#_#</item>
+           <item>#$*_$_#</item>
+           <item>#___$_#</item>
+           <item>#_..__#</item>
+           <item>#__*__#</item>
+           <item>#######</item>
+     </string-array>
+     
+     <string-array name="level_004_fields">
+           <item>#######</item>
+           <item>#._$_.#</item>
+           <item>#_$@$_#</item>
+           <item>#._$_.#</item>
+           <item>#######</item>
+     </string-array>
+     
+     <string-array name="level_005_fields">
+           <item>########</item>
+           <item>#__..$_#</item>
+           <item>#_$@_$_#</item>
+           <item>#_$..__#</item>
+           <item>########</item>
+     </string-array>
+     
+     <string-array name="level_006_fields">
+           <item>########</item>
+           <item>##_____#</item>
+           <item>##_.$._#</item>
+           <item>#@_$_$_#</item>
+           <item>#__.$._#</item>
+           <item>##_____#</item>
+           <item>########</item>
+     </string-array>
+     
+     <string-array name="level_007_fields">
+           <item>######</item>
+           <item>##___###</item>
+           <item>#__#___#</item>
+           <item>#_#__#_#</item>
+           <item>#_$_$#_#</item>
+           <item>#.#____#</item>
+           <item>#._@####</item>
+           <item>#####</item>
+     </string-array>
+     
+     <string-array name="level_008_fields">
+           <item>########</item>
+           <item>#_$._$.#</item>
+           <item>#@.$_$.#</item>
+           <item>#_$._$.#</item>
+           <item>#_.$_$.#</item>
+           <item>########</item>
+     </string-array>
+     
+     <string-array name="level_009_fields">
+           <item>##########</item>
+           <item>####__#_@#</item>
+           <item>###___#__#</item>
+           <item>###$_$_$_#</item>
+           <item>###_$##__#</item>
+           <item>###_$_#_##</item>
+           <item>#.....__#</item>
+           <item>#########</item>
+     </string-array>
+     
+     <string-array name="level_010_fields">
+           <item>#########</item>
+           <item>#___*___#</item>
+           <item>#_$.#.$_#</item>
+           <item>#__$.$__#</item>
+           <item>###.$.###</item>
+           <item>####@##</item>
+           <item>######</item>
+     </string-array>
+     
+     <string-array name="level_011_fields">
+           <item>#######</item>
+           <item>###___#</item>
+           <item>#@_.$.#</item>
+           <item>#__$_$#</item>
+           <item>###.$.#</item>
+           <item>###___#</item>
+           <item>#######</item>
+     </string-array>
+     
+     <string-array name="level_012_fields">
+           <item>######</item>
+           <item>###__#</item>
+           <item>###__#####</item>
+           <item>#__..$___#</item>
+           <item>#@$.._$__#</item>
+           <item>###_$#####</item>
+           <item>###__#</item>
+           <item>######</item>
+     </string-array>
+     
+     <string-array name="level_013_fields">
+           <item>##########</item>
+           <item>##_______#</item>
+           <item>#___#$#$_#</item>
+           <item>#_$$__.$.#</item>
+           <item>#_@###...#</item>
+           <item>####_#####</item>
+     </string-array>
+     
+     <string-array name="level_014_fields">
+           <item>###########</item>
+           <item>##___#@___##</item>
+           <item>#_$_....$__#</item>
+           <item>#__$####_$_#</item>
+           <item>#___#__#__##</item>
+           <item>#####__####</item>
+     </string-array>
+     
+     <string-array name="level_015_fields">
+           <item>########</item>
+           <item>#___@__#</item>
+           <item>#_$$#__#</item>
+           <item>##__$_##</item>
+           <item>##.$__#</item>
+           <item>###._##</item>
+           <item>###..#</item>
+           <item>######</item>
+     </string-array>
+     
+     <string-array name="level_016_fields">
+           <item>#######</item>
+           <item>##._..#</item>
+           <item>##._$.#</item>
+           <item>###__$##</item>
+           <item>#_$__$_#</item>
+           <item>#_#$##_#</item>
+           <item>#___@__#</item>
+           <item>########</item>
+     </string-array>
+     
+     <string-array name="level_017_fields">
+           <item>#######</item>
+           <item>##_._@#</item>
+           <item>#_$_$_#</item>
+           <item>#._*_.#</item>
+           <item>#_$_$_#</item>
+           <item>##_._##</item>
+           <item>######</item>
+     </string-array>
+     
+     <string-array name="level_018_fields">
+           <item>########</item>
+           <item>###____#</item>
+           <item>###$$$_#</item>
+           <item>#@_$.._#</item>
+           <item>#_$...##</item>
+           <item>####__#</item>
+           <item>#######</item>
+     </string-array>
+     
+     <string-array name="level_019_fields">
+           <item>############</item>
+           <item>#____..._$_#</item>
+           <item>#_$$$***_$@#</item>
+           <item>#____..._$_#</item>
+           <item>############</item>
+     </string-array>
+     
+     <string-array name="level_020_fields">
+           <item>########</item>
+           <item>#__#___#</item>
+           <item>#_$..$_#</item>
+           <item>#@$.*_##</item>
+           <item>#_$..$_#</item>
+           <item>#__#___#</item>
+           <item>########</item>
+     </string-array>
+     
+     <string-array name="level_021_fields">
+           <item>#######</item>
+           <item>###___#</item>
+           <item>###$.$#####</item>
+           <item>#___._$___#</item>
+           <item>#_##$##_@_#</item>
+           <item>#___._#####</item>
+           <item>###_._#</item>
+           <item>###___#</item>
+           <item>#######</item>
+     </string-array>
+</resources>

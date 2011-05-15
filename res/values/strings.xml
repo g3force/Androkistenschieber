@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroKistenschieber</string>
+<string name="version">v0.1</string>
+<string name="text_won">You finished the level!</string>
+<string name="menu_info">Info</string>
+<string name="text_info">The aim of the game is to put all boxes on one of the fields.</string>
+<string name="text_version">The current version is </string>
+<string name="text_chooselevel">Choose a new level</string>
+<string name="menu_openlevel">Open</string>
+<string name="info_empty">unknown</string>
+<string name="test">@array/level_000_fields</string>
+<string name="menu_restart">restart</string>
+</resources>
