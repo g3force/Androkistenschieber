@@ -13,7 +13,6 @@ public class AkControl implements OnKeyListener {
 		level = _level;
 	}
 
-	@Override
 	public boolean onKey(View v, int keyCode, KeyEvent event) {
 		if (event.getAction() == KeyEvent.ACTION_DOWN) {
 			switch(event.getKeyCode()) {
