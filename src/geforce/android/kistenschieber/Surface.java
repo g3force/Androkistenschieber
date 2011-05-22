@@ -10,13 +10,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.View.OnTouchListener;
 import android.widget.GridView;
 import android.widget.Toast;
 
-   
+
 public class Surface extends Activity {
 	private static final String TAG = "Surface";
     public static final int DIALOG_WIN_ID = 0,

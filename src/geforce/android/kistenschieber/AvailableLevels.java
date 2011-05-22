@@ -3,7 +3,7 @@ package geforce.android.kistenschieber;
 import java.util.ArrayList;
 
 public class AvailableLevels {
-	private static final String TAG = "AvailableLevels";
+	//private static final String TAG = "AvailableLevels";
 	private ArrayList<Integer> fieldid = new ArrayList<Integer>();
 	private ArrayList<Integer> infoid = new ArrayList<Integer>();
 	//private Integer[] infoid = {}; 
