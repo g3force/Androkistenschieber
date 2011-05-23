@@ -40,7 +40,7 @@ public class Surface extends Activity {
 		  init();
 	  }
 	  
-	}
+	} 
 	
 	private void init() {
 		// get a reference to the surface

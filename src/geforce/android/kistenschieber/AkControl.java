@@ -2,10 +2,12 @@ package geforce.android.kistenschieber;
 
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
+import android.view.View.OnTouchListener;
 
-public class AkControl implements OnKeyListener {
+public class AkControl implements OnKeyListener, OnTouchListener {
 	private static final String TAG = "AkControl";
 	private Level level;
 	
@@ -41,6 +43,25 @@ public class AkControl implements OnKeyListener {
 				return true;	
 			}
 		}
+		return false;
+	}
+
+	public boolean onTouch(View v, MotionEvent ev) {
+		final int historySize = ev.getHistorySize();
+	     final int pointerCount = ev.getPointerCount();
+	     for (int h = 0; h < historySize; h++) {
+	         System.out.printf("At time %d:", ev.getHistoricalEventTime(h));
+	         for (int p = 0; p < pointerCount; p++) {
+	             System.out.printf("  pointer %d: (%f,%f)",
+	                 ev.getPointerId(p), ev.getHistoricalX(p, h), ev.getHistoricalY(p, h));
+	         }
+	     }
+	     System.out.printf("At time %d:", ev.getEventTime());
+	     for (int p = 0; p < pointerCount; p++) {
+	         System.out.printf("  pointer %d: (%f,%f)",
+	             ev.getPointerId(p), ev.getX(p), ev.getY(p));
+	     }
+		
 		return false;
 	}
 	
