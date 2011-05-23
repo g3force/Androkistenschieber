@@ -8,10 +8,10 @@ import android.view.View.OnKeyListener;
 public class AkControl implements OnKeyListener {
 	private static final String TAG = "AkControl";
 	private Level level;
-	
+    
 	public AkControl(Level _level) {
 		level = _level;
-	}
+	}	
 
 	public boolean onKey(View v, int keyCode, KeyEvent event) {
 		if (event.getAction() == KeyEvent.ACTION_DOWN) {
@@ -43,7 +43,4 @@ public class AkControl implements OnKeyListener {
 		}
 		return false;
 	}
-	
-	
-	
 }

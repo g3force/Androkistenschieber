@@ -8,13 +8,16 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.GridView;
 import android.widget.Toast;
 
 
-public class Surface extends Activity {
+public class Surface extends Activity {//implements OnClickListener {
 	private static final String TAG = "Surface";
     public static final int DIALOG_WIN_ID = 0,
     						DIALOG_INFO_ID = 1,
@@ -28,6 +31,8 @@ public class Surface extends Activity {
 	private Level level;
 	private AkControl akControl;
 	private Resources res; 
+    private GestureDetector gestureDetector;
+    View.OnTouchListener gestureListener;
 	
 	
 	@Override
@@ -40,11 +45,25 @@ public class Surface extends Activity {
 		  init();
 	  }
 	  
+	  // Gesture detection
+      gestureDetector = new GestureDetector(new Gestures(level));
+      gestureListener = new View.OnTouchListener() {
+          public boolean onTouch(View v, MotionEvent event) {
+              if (gestureDetector.onTouchEvent(event)) {
+                  return true;
+              }
+              return false;
+          }
+      };
+	  
 	}
 	
 	private void init() {
 		// get a reference to the surface
 		surfaceView = (GridView)findViewById(R.id.surfaceLayout);
+		
+		//surfaceView.setOnClickListener(this); 
+		surfaceView.setOnTouchListener(gestureListener);
 		
 		// load Resources
 		res = getResources();		
@@ -90,7 +109,7 @@ public class Surface extends Activity {
 	
 	private void loadLevel(int index) {		
 		// create level with specified content and some references
-		level = new Level(this,this,availableLevels.getFieldid(index),surfaceView);
+		level = new Level(this,this,availableLevels.getFieldid(index),surfaceView,gestureListener);
 		
 		// put fields of the level on the surface
 		surfaceView.setAdapter(level);
@@ -197,6 +216,11 @@ public class Surface extends Activity {
 		
 		return true;
 	}
-	
+
+
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
