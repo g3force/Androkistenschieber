@@ -16,13 +16,20 @@ import android.gesture.Prediction;
 import android.gesture.GestureOverlayView.OnGesturePerformedListener;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.GridView;
 import android.widget.Toast;
 
 
+<<<<<<< HEAD
 public class Surface extends Activity implements OnGesturePerformedListener {
+=======
+public class Surface extends Activity {//implements OnClickListener {
+>>>>>>> branch 'master' of git@github.com:g3force/Androkistenschieber.git
 	private static final String TAG = "Surface";
     public static final int DIALOG_WIN_ID = 0,
     						DIALOG_INFO_ID = 1,
@@ -35,8 +42,14 @@ public class Surface extends Activity implements OnGesturePerformedListener {
     private GridView surfaceView;
 	private Level level;
 	private AkControl akControl;
+<<<<<<< HEAD
 	private Resources res;
     private GestureLibrary mLibrary;
+=======
+	private Resources res; 
+    private GestureDetector gestureDetector;
+    View.OnTouchListener gestureListener;
+>>>>>>> branch 'master' of git@github.com:g3force/Androkistenschieber.git
 	
 	
 	@Override
@@ -49,6 +62,7 @@ public class Surface extends Activity implements OnGesturePerformedListener {
 		  init();
 	  }
 	  
+<<<<<<< HEAD
 	  // init gestures
 	  mLibrary = GestureLibraries.fromRawResource(this, R.raw.controls);
 	  if(mLibrary.load()) {
@@ -60,10 +74,27 @@ public class Surface extends Activity implements OnGesturePerformedListener {
       GestureOverlayView gestures = (GestureOverlayView) findViewById(R.id.gestures);
       gestures.addOnGesturePerformedListener(this);
 	} 
+=======
+	  // Gesture detection
+      gestureDetector = new GestureDetector(new Gestures(level));
+      gestureListener = new View.OnTouchListener() {
+          public boolean onTouch(View v, MotionEvent event) {
+              if (gestureDetector.onTouchEvent(event)) {
+                  return true;
+              }
+              return false;
+          }
+      };
+	  
+	}
+>>>>>>> branch 'master' of git@github.com:g3force/Androkistenschieber.git
 	
 	private void init() {
 		// get a reference to the surface
 		surfaceView = (GridView)findViewById(R.id.surfaceLayout);
+		
+		//surfaceView.setOnClickListener(this); 
+		surfaceView.setOnTouchListener(gestureListener);
 		
 		// load Resources
 		res = getResources();		
@@ -123,7 +154,7 @@ public class Surface extends Activity implements OnGesturePerformedListener {
 	
 	private void loadLevel(int index) {		
 		// create level with specified content and some references
-		level = new Level(this,this,availableLevels.getFieldid(index),surfaceView);
+		level = new Level(this,this,availableLevels.getFieldid(index),surfaceView,gestureListener);
 		
 		// put fields of the level on the surface
 		surfaceView.setAdapter(level);
@@ -230,6 +261,11 @@ public class Surface extends Activity implements OnGesturePerformedListener {
 		
 		return true;
 	}
-	
+
+
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

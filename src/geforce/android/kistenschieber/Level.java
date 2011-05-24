@@ -8,6 +8,7 @@ import android.graphics.Point;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.BaseAdapter;
@@ -30,13 +31,15 @@ public class Level extends BaseAdapter {
     private Surface surfaceActivity;
     private int levelfieldid = 0;
     private ArrayList<Integer[][]> movements = new ArrayList<Integer[][]>();
+    OnTouchListener gestureListener;
     
-    public Level(Context c,Surface a,int _fieldid, GridView _surfaceView) {
+    public Level(Context c,Surface a,int _fieldid, GridView _surfaceView, OnTouchListener _gestureListener) {
         // get reference to some objects
     	mContext = c;
     	surfaceActivity = a;
         surfaceView = _surfaceView;
         levelfieldid = _fieldid;
+        gestureListener = _gestureListener;
         
         // get content of level from Resource
         Resources res = mContext.getResources();
@@ -123,6 +126,7 @@ public class Level extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(imageSize,imageSize));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(0, 0, 0, 0);
+            imageView.setOnTouchListener(gestureListener);
         } else {
             imageView = (ImageView) convertView;
         }
