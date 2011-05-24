@@ -292,11 +292,13 @@ public class Level extends BaseAdapter {
     }
     
     public void revokeMove() {
-    	surface = movements.get(movements.size()-1).clone();
-    	movements.remove(movements.size()-1);
-    	Log.d(TAG,movements.get(movements.size()-1).toString());
-    	// TODO: Array kopiert sich nicht richtig
-    	reloadSurfaceParts();
+    	if(movements.size()>0) {
+			surface = movements.get(movements.size()-1).clone();
+			movements.remove(movements.size()-1);
+			Log.d(TAG,movements.get(movements.size()-1).toString());
+			// TODO: Array kopiert sich nicht richtig
+			reloadSurfaceParts();
+    	}
     }
     
     // initialize images for the surface

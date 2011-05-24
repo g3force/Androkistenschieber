@@ -9,52 +9,52 @@ package geforce.android.kistenschieber;
 
 public final class R {
     public static final class array {
-        public static final int level_000_fields=0x7f040000;
+        public static final int level_000_fields=0x7f050000;
         /**  author,version,title,description 
          */
-        public static final int level_000_info=0x7f040016;
-        public static final int level_001_fields=0x7f040001;
-        public static final int level_001_info=0x7f040017;
-        public static final int level_002_fields=0x7f040002;
-        public static final int level_002_info=0x7f040018;
-        public static final int level_003_fields=0x7f040003;
-        public static final int level_003_info=0x7f040019;
-        public static final int level_004_fields=0x7f040004;
-        public static final int level_004_info=0x7f04001a;
-        public static final int level_005_fields=0x7f040005;
-        public static final int level_005_info=0x7f04001b;
-        public static final int level_006_fields=0x7f040006;
-        public static final int level_006_info=0x7f04001c;
-        public static final int level_007_fields=0x7f040007;
-        public static final int level_007_info=0x7f04001d;
-        public static final int level_008_fields=0x7f040008;
-        public static final int level_008_info=0x7f04001e;
-        public static final int level_009_fields=0x7f040009;
-        public static final int level_009_info=0x7f04001f;
-        public static final int level_010_fields=0x7f04000a;
-        public static final int level_010_info=0x7f040020;
-        public static final int level_011_fields=0x7f04000b;
-        public static final int level_011_info=0x7f040021;
-        public static final int level_012_fields=0x7f04000c;
-        public static final int level_012_info=0x7f040022;
-        public static final int level_013_fields=0x7f04000d;
-        public static final int level_013_info=0x7f040023;
-        public static final int level_014_fields=0x7f04000e;
-        public static final int level_014_info=0x7f040024;
-        public static final int level_015_fields=0x7f04000f;
-        public static final int level_015_info=0x7f040025;
-        public static final int level_016_fields=0x7f040010;
-        public static final int level_016_info=0x7f040026;
-        public static final int level_017_fields=0x7f040011;
-        public static final int level_017_info=0x7f040027;
-        public static final int level_018_fields=0x7f040012;
-        public static final int level_018_info=0x7f040028;
-        public static final int level_019_fields=0x7f040013;
-        public static final int level_019_info=0x7f040029;
-        public static final int level_020_fields=0x7f040014;
-        public static final int level_020_info=0x7f04002a;
-        public static final int level_021_fields=0x7f040015;
-        public static final int level_021_info=0x7f04002b;
+        public static final int level_000_info=0x7f050016;
+        public static final int level_001_fields=0x7f050001;
+        public static final int level_001_info=0x7f050017;
+        public static final int level_002_fields=0x7f050002;
+        public static final int level_002_info=0x7f050018;
+        public static final int level_003_fields=0x7f050003;
+        public static final int level_003_info=0x7f050019;
+        public static final int level_004_fields=0x7f050004;
+        public static final int level_004_info=0x7f05001a;
+        public static final int level_005_fields=0x7f050005;
+        public static final int level_005_info=0x7f05001b;
+        public static final int level_006_fields=0x7f050006;
+        public static final int level_006_info=0x7f05001c;
+        public static final int level_007_fields=0x7f050007;
+        public static final int level_007_info=0x7f05001d;
+        public static final int level_008_fields=0x7f050008;
+        public static final int level_008_info=0x7f05001e;
+        public static final int level_009_fields=0x7f050009;
+        public static final int level_009_info=0x7f05001f;
+        public static final int level_010_fields=0x7f05000a;
+        public static final int level_010_info=0x7f050020;
+        public static final int level_011_fields=0x7f05000b;
+        public static final int level_011_info=0x7f050021;
+        public static final int level_012_fields=0x7f05000c;
+        public static final int level_012_info=0x7f050022;
+        public static final int level_013_fields=0x7f05000d;
+        public static final int level_013_info=0x7f050023;
+        public static final int level_014_fields=0x7f05000e;
+        public static final int level_014_info=0x7f050024;
+        public static final int level_015_fields=0x7f05000f;
+        public static final int level_015_info=0x7f050025;
+        public static final int level_016_fields=0x7f050010;
+        public static final int level_016_info=0x7f050026;
+        public static final int level_017_fields=0x7f050011;
+        public static final int level_017_info=0x7f050027;
+        public static final int level_018_fields=0x7f050012;
+        public static final int level_018_info=0x7f050028;
+        public static final int level_019_fields=0x7f050013;
+        public static final int level_019_info=0x7f050029;
+        public static final int level_020_fields=0x7f050014;
+        public static final int level_020_info=0x7f05002a;
+        public static final int level_021_fields=0x7f050015;
+        public static final int level_021_info=0x7f05002b;
     }
     public static final class attr {
     }
@@ -69,22 +69,26 @@ public final class R {
         public static final int wand=0x7f020007;
     }
     public static final class id {
-        public static final int surfaceLayout=0x7f060000;
+        public static final int gestures=0x7f070000;
+        public static final int surfaceLayout=0x7f070001;
     }
     public static final class layout {
         public static final int main=0x7f030000;
     }
+    public static final class raw {
+        public static final int controls=0x7f040000;
+    }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int info_empty=0x7f050008;
-        public static final int menu_info=0x7f050003;
-        public static final int menu_openlevel=0x7f050007;
-        public static final int menu_restart=0x7f05000a;
-        public static final int test=0x7f050009;
-        public static final int text_chooselevel=0x7f050006;
-        public static final int text_info=0x7f050004;
-        public static final int text_version=0x7f050005;
-        public static final int text_won=0x7f050002;
-        public static final int version=0x7f050001;
+        public static final int app_name=0x7f060000;
+        public static final int info_empty=0x7f060008;
+        public static final int menu_info=0x7f060003;
+        public static final int menu_openlevel=0x7f060007;
+        public static final int menu_restart=0x7f06000a;
+        public static final int test=0x7f060009;
+        public static final int text_chooselevel=0x7f060006;
+        public static final int text_info=0x7f060004;
+        public static final int text_version=0x7f060005;
+        public static final int text_won=0x7f060002;
+        public static final int version=0x7f060001;
     }
 }

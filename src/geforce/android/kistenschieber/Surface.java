@@ -1,11 +1,19 @@
 package geforce.android.kistenschieber;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.gesture.Gesture;
+import android.gesture.GestureLibraries;
+import android.gesture.GestureLibrary;
+import android.gesture.GestureOverlayView;
+import android.gesture.Prediction;
+import android.gesture.GestureOverlayView.OnGesturePerformedListener;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -14,7 +22,7 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 
-public class Surface extends Activity {
+public class Surface extends Activity implements OnGesturePerformedListener {
 	private static final String TAG = "Surface";
     public static final int DIALOG_WIN_ID = 0,
     						DIALOG_INFO_ID = 1,
@@ -27,7 +35,8 @@ public class Surface extends Activity {
     private GridView surfaceView;
 	private Level level;
 	private AkControl akControl;
-	private Resources res; 
+	private Resources res;
+    private GestureLibrary mLibrary;
 	
 	
 	@Override
@@ -40,6 +49,16 @@ public class Surface extends Activity {
 		  init();
 	  }
 	  
+	  // init gestures
+	  mLibrary = GestureLibraries.fromRawResource(this, R.raw.controls);
+	  if(mLibrary.load()) {
+		  Log.i(TAG, "mLibrary loaded");
+	  }
+	  else {
+		  Log.w(TAG, "mLibrary not loaded");
+	  }
+      GestureOverlayView gestures = (GestureOverlayView) findViewById(R.id.gestures);
+      gestures.addOnGesturePerformedListener(this);
 	} 
 	
 	private void init() {
@@ -60,6 +79,20 @@ public class Surface extends Activity {
 		
 		// create a new level with the specified content and load it on the surface
 		loadLevel(0);
+	}
+
+	public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
+		ArrayList<Prediction> predictions = mLibrary.recognize(gesture);
+		Log.d(TAG,"Gesture");
+		// We want at least one prediction
+		if (predictions.size() > 0) {
+			Prediction prediction = predictions.get(0);
+			// We want at least some confidence in the result
+			if (prediction.score > 1.0) {
+				// Show the spell
+				Toast.makeText(this, prediction.name, Toast.LENGTH_SHORT).show();
+			}
+		}		
 	}
 	
 	private void getAllAvailableLevels() {
