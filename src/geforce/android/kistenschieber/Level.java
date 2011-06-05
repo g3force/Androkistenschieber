@@ -2,13 +2,13 @@ package geforce.android.kistenschieber;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.BaseAdapter;
@@ -22,24 +22,25 @@ public class Level extends BaseAdapter {
     public static final int GO_UP=0,GO_LEFT=1,GO_DOWN=2,GO_RIGHT=3;
 	private static final String TAG = "Level";
     private Context mContext;
-    private HashMap<String,Integer> imageAllocation = new HashMap<String,Integer>(); // gives each character of the saved level a corresponding image 
-    private ArrayList<Integer> surfaceParts = new ArrayList<Integer>(); // list of all fields from left top to right ground for adapter
-    private Integer[][] surface; // array of all fields, accessible through position [x][y]
+	// gives each character of the saved level a corresponding image
+    private HashMap<String,Integer> imageAllocation = new HashMap<String,Integer>();
+    // list of all fields from left top to right ground for adapter
+    private ArrayList<Integer> surfaceParts = new ArrayList<Integer>(); 
+    // array of all fields, accessible through position [x][y]	
+    private Integer[][] surface; 
     private int imageSize = 0; // calculated size of each field-image to fit level on screen
     private GridView surfaceView; // reference to surface of displayed level
     private int height = 0,width = 0; // height and width in amount of fields of level
     private Surface surfaceActivity;
     private int levelfieldid = 0;
     private ArrayList<Integer[][]> movements = new ArrayList<Integer[][]>();
-    OnTouchListener gestureListener;
     
-    public Level(Context c,Surface a,int _fieldid, GridView _surfaceView, OnTouchListener _gestureListener) {
+    public Level(Context c,Surface a,int _fieldid, GridView _surfaceView) {
         // get reference to some objects
     	mContext = c;
     	surfaceActivity = a;
         surfaceView = _surfaceView;
         levelfieldid = _fieldid;
-        gestureListener = _gestureListener;
         
         // get content of level from Resource
         Resources res = mContext.getResources();
@@ -117,7 +118,9 @@ public class Level extends BaseAdapter {
     	return valid;
     }
 
-    // create a new ImageView for each item referenced by the Adapter
+    /**
+     * create a new ImageView for each item referenced by the Adapter
+     */
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {  // if it's not recycled, initialize some attributes
@@ -126,7 +129,6 @@ public class Level extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(imageSize,imageSize));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(0, 0, 0, 0);
-            imageView.setOnTouchListener(gestureListener);
         } else {
             imageView = (ImageView) convertView;
         }
@@ -140,7 +142,10 @@ public class Level extends BaseAdapter {
     	surface[x][y] = part;
     }
 
-    // choose image for each surface-part 
+    /**
+     * choose image for each surface-part 
+     * @param surfaceContent
+     */
     private void loadLevel(String[] surfaceContent) {
     	Log.i(TAG,"loadLevel called");
     	for(int y=0;y < surfaceContent.length;y++) {
@@ -157,7 +162,9 @@ public class Level extends BaseAdapter {
     	reloadSurfaceParts();
     }
     
-    // put surface into surfaceParts-Array
+    /**
+     * put surface into surfaceParts-Array
+     */
     public void reloadSurfaceParts() {
     	Log.i(TAG,"reloadSurfaceParts called");
     	surfaceParts = new ArrayList<Integer>();

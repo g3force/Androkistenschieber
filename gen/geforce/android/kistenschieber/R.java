@@ -69,7 +69,7 @@ public final class R {
         public static final int wand=0x7f020007;
     }
     public static final class id {
-        public static final int gestures=0x7f070000;
+        public static final int frameLayout=0x7f070000;
         public static final int surfaceLayout=0x7f070001;
     }
     public static final class layout {
