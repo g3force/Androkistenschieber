@@ -1,20 +1,13 @@
 package geforce.android.kistenschieber;
 
-import java.util.ArrayList;
-
-import android.gesture.Gesture;
 import android.gesture.GestureLibraries;
 import android.gesture.GestureLibrary;
-import android.gesture.GestureOverlayView;
-import android.gesture.Prediction;
-import android.gesture.GestureOverlayView.OnGesturePerformedListener;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
 import android.view.View.OnTouchListener;
-import android.widget.Toast;
 
 public class AkControl implements OnKeyListener, OnTouchListener {
 	private static final String TAG = "AkControl";
@@ -65,6 +58,7 @@ public class AkControl implements OnKeyListener, OnTouchListener {
 	public boolean onTouch(View v, MotionEvent ev) {
 		final int historySize = ev.getHistorySize();
 		final int pointerCount = ev.getPointerCount();
+		Log.e(TAG,"Touch");
 		for (int h = 0; h < historySize; h++) {
 			Log.w(TAG, "At time "+ev.getHistoricalEventTime(h)+":");
 			for (int p = 0; p < pointerCount; p++) {
