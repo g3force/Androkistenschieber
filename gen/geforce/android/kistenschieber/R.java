@@ -69,8 +69,12 @@ public final class R {
         public static final int wand=0x7f020007;
     }
     public static final class id {
-        public static final int frameLayout=0x7f070000;
-        public static final int surfaceLayout=0x7f070001;
+        public static final int button_down=0x7f070005;
+        public static final int button_left=0x7f070003;
+        public static final int button_right=0x7f070004;
+        public static final int button_up=0x7f070002;
+        public static final int relLayout=0x7f070000;
+        public static final int surfaceView=0x7f070001;
     }
     public static final class layout {
         public static final int main=0x7f030000;

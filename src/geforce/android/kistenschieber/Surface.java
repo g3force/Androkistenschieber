@@ -1,6 +1,6 @@
 package geforce.android.kistenschieber;
 
-import android.app.Activity; 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -25,7 +24,6 @@ public class Surface extends Activity {
 	private CharSequence[] menu_openlevel_items;
 	private AvailableLevels availableLevels = new AvailableLevels();
 	private GridView surfaceView;
-	private FrameLayout frameLayout;
 	private Level level;
 	private AkControl akControl;
 	private Resources res;
@@ -55,11 +53,10 @@ public class Surface extends Activity {
 
 	private void init() {
 		// get a reference to the surface
-		surfaceView = (GridView) findViewById(R.id.surfaceLayout);
-		frameLayout = (FrameLayout) findViewById(R.id.frameLayout);
+		surfaceView = (GridView) findViewById(R.id.surfaceView);
 		
-		frameLayout.setOnTouchListener(akControl);
-
+//		frameLayout.setOnTouchListener(akControl);
+		
 		// load Resources
 		res = getResources();
 

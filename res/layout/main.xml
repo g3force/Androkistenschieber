@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/frameLayout"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/relLayout"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-<!-- <android.gesture.GestureOverlayView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/gestures"
-	android:layout_width="fill_parent" 
     android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<!-- <android.gesture.GestureOverlayView xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- 	android:id="@+id/gestures" -->
+<!-- 	android:layout_width="fill_parent"  -->
+<!--     android:layout_height="fill_parent" -->
+<!--     android:gestureStrokeType="single" -->
+<!--     android:eventsInterceptionEnabled="false"> -->
     
-    android:gestureStrokeType="single"
-    android:eventsInterceptionEnabled="false">-->
-    
-    <GridView android:id="@+id/surfaceLayout"
+    <GridView android:id="@+id/surfaceView"
     	android:layout_width="wrap_content" 
     	android:layout_height="wrap_content"
     	android:gravity="top"
     	android:stretchMode="columnWidth" />
-</FrameLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:layout_alignParentBottom="true">
+	    
+	    <Button android:id="@+id/button_up"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="UP"
+		    android:gravity="center"/>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+		    <Button android:id="@+id/button_left"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:text="LEFT"/>
+		    <Button android:id="@+id/button_right"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:text="RIGHT"/>
+		</LinearLayout>
+		<Button android:id="@+id/button_down"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="DOWN"
+		    android:gravity="center"/>
+	</LinearLayout>
+</RelativeLayout>
 <!-- </android.gesture.GestureOverlayView> -->
