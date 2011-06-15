@@ -17,37 +17,52 @@
     	android:gravity="top"
     	android:stretchMode="columnWidth" />
     
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical"
 	    android:gravity="center"
-	    android:layout_alignParentBottom="true">
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20px">
 	    
 	    <Button android:id="@+id/button_up"
 		    android:layout_height="wrap_content"
 		    android:layout_width="wrap_content"
-		    android:text="UP"
-		    android:gravity="center"/>
-		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_margin="10px"
+		    android:background="@drawable/transparent"
+		    android:textColor="#ff0000"
+		    android:textSize="45px"
+		    android:text="UP"/>
+		<LinearLayout
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
+		    android:layout_margin="10px"
 		    android:orientation="horizontal"
 		    android:gravity="center">
 		    <Button android:id="@+id/button_left"
 			    android:layout_height="wrap_content"
 			    android:layout_width="wrap_content"
-			    android:text="LEFT"/>
+			    android:background="@drawable/transparent"
+			    android:textColor="#ff0000"
+		    	android:textSize="45px"
+			    android:text="LEFT "
+			    android:gravity="left"/>
 		    <Button android:id="@+id/button_right"
 			    android:layout_height="wrap_content"
 			    android:layout_width="wrap_content"
-			    android:text="RIGHT"/>
+			    android:background="@drawable/transparent"
+			    android:textColor="#ff0000"
+		    	android:textSize="45px"
+			    android:text=" RIGHT"/>
 		</LinearLayout>
 		<Button android:id="@+id/button_down"
 		    android:layout_height="wrap_content"
 		    android:layout_width="wrap_content"
-		    android:text="DOWN"
-		    android:gravity="center"/>
+		    android:layout_margin="10px"
+		    android:background="@drawable/transparent"
+		    android:textColor="#ff0000"
+		    android:textSize="45px"
+		    android:text="DOWN"/>
 	</LinearLayout>
 </RelativeLayout>
 <!-- </android.gesture.GestureOverlayView> -->

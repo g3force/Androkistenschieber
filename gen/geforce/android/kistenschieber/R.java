@@ -66,7 +66,8 @@ public final class R {
         public static final int kiste=0x7f020004;
         public static final int kistepunkt=0x7f020005;
         public static final int punkt=0x7f020006;
-        public static final int wand=0x7f020007;
+        public static final int transparent=0x7f020007;
+        public static final int wand=0x7f020008;
     }
     public static final class id {
         public static final int button_down=0x7f070005;
